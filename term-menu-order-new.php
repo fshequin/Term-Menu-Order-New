@@ -1,15 +1,15 @@
 <?php
 /*
-Plugin Name: Term Menu Order
-Plugin URI: https://github.com/kalchas
-Description: 
-Author: James Lafferty
-Version: 0.2
-Author URI: https://github.com/kalchas
+Plugin Name: Term Menu Order New
+Plugin URI: https://btcny.com
+Description: Creates a 'menu_order' column to specify term order, allowing theme and plugin developers to sort term by menu order.
+Author: Fred Shequine
+Version: 1.0
+Author URI: https://btcny.com
 License: GPL2
 */
 
-/*  Copyright 2010  James Lafferty  (email : james@nearlysensical.com)
+/*  Copyright 2010  Fred Shequine  (email : fred@btcny.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -61,5 +61,8 @@ spl_autoload_register('buffered_autoloader');
  */
 
 $ns_tmo_plugin = NS_TMO_Plugin::get_instance();
+//declared the get_instance() method as static in /lib/ns_tmo_plugin.class.php, doubt this plugin will ever get updated.FGS
+//$ns_tmo_plugin = new NS_TMO_Plugin(); didn't work, class may not be coded right.
+//$ns_tmo_plugin->get_instance(); didn't work
 
 ?>
